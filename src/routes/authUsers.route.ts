@@ -63,7 +63,7 @@ authRouter.post('/signup',async (req:Request,res:Response) => {
     return res.status(201).send({message : "successfully created a user"})
     }   
     catch(error: any){
-        return res.status(500).send({message :`error in creating a new user : ${error}`})
+    return res.status(500).send({message :`error in creating a new user : ${error}`})
     }
 })
 
